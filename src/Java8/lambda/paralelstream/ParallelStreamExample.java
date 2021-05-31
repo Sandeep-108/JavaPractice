@@ -36,7 +36,7 @@ public class ParallelStreamExample {
         System.out.println(" Emp plain time taken: "+ (end-start)+" avg: "+avgSalaryPlain.getAsDouble());
         System.out.println("=========================================");
         start = System.currentTimeMillis();
-        OptionalDouble averageparalel = employees.parallelStream().map(Employee::getSalary).mapToDouble(i -> i).average();
+        OptionalDouble averageparalel = employees.parallelStream().mapToDouble(Employee::getSalary).average();
         end = System.currentTimeMillis();
         System.out.println(" Emp parrlel time taken: "+ (end-start)+" avg: "+averageparalel.getAsDouble());
 
