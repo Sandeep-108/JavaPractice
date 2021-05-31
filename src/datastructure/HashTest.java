@@ -20,6 +20,7 @@ public class HashTest {
         System.out.println("HashCode of s1: "+s1.hashCode());//
         System.out.println("HashCode of s2: "+s2.hashCode());//
         System.out.println("HashCode of Test: "+"Test".hashCode());//
+        System.out.println(s == s2);
         System.out.println(map.get(s));//C
         System.out.println(map.get(s1));//C
         System.out.println(map.get(s2));//C

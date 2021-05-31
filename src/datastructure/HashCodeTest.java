@@ -38,7 +38,7 @@ public class HashCodeTest {
         map.put(c3,"E");
         map.put(c,"D");
         System.out.println(map);//10,1,5
-        System.out.println(map.get(c1));
-        System.out.println(c ==c);
+        System.out.println(map.get(c3));
+        System.out.println(c);
     }
 }
