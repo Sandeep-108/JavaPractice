@@ -37,7 +37,7 @@ public class ValueReturningTaskA implements Runnable {
         done = true;
         System.out.println("[" + Thread.currentThread().getName() + "]< TASK " + taskId + "> Addition done");
         synchronized (this) {
-            System.out.println("[" + Thread.currentThread().getName() + "]< TASK " + taskId + "> synchronized ");
+            System.out.println("[" + Thread.currentThread().getName() + "]< TASK " + taskId + "> synchronized "+this.getSum());
             this.notifyAll();
         }
     }
