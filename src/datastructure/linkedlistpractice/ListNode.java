@@ -10,6 +10,9 @@ public class ListNode<V>{
         this.data=data;
         next=null;
     }
+    public V getData(){
+        return data;
+    }
 
     public ListNode add(V data){
         ListNode node = new ListNode(data);
