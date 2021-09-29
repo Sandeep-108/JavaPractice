@@ -1,15 +1,16 @@
 package commons;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class DistributeBinaryTreeValue {
 
 /**
- *
  *            0
  *          0     2
  *        1  3 1   0
  *   4
  *   //sum == node
- *
  */
 public static void main(String[] args) {
     Node root = new Node();
