@@ -6,7 +6,7 @@ import java.util.List;
 public class CombinationSum {
 
     public static void main(String[] args) {
-        int arr[] ={2,3,6,7};
+        int[] arr ={2,3,6,7};
         int target= 14;
         List<List<Integer>> result = new ArrayList<>();
         getCombinationSum(arr,0,target,new ArrayList<>(),result);

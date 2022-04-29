@@ -11,7 +11,7 @@ public class SharePrice {
      maxProfit : 695 - 40 = 655
      */
 
-    public static Integer maxProfit(int priceList[]){
+    public static Integer maxProfit(int[] priceList){
         if(priceList==null || priceList.length<=1){
             return 0;
         }

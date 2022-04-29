@@ -2,7 +2,7 @@ package datastructure.linkedlistpractice;
 
 public class ListNode<V>{
     public V data;
-    public  ListNode next;
+    public  ListNode<V> next;
 
     public ListNode()
     {}
@@ -14,13 +14,13 @@ public class ListNode<V>{
         return data;
     }
 
-    public ListNode add(V data){
-        ListNode node = new ListNode(data);
+    public ListNode<V> add(V data){
+        ListNode<V> node = new ListNode<V>(data);
         if(this.data ==null){
             this.data = data;
             return this;
         }
-        ListNode current = this;
+        ListNode<V> current = this;
         while (current.next !=null){
             current= current.next;
         }
@@ -35,9 +35,9 @@ public class ListNode<V>{
         }
         StringBuilder sb = new StringBuilder();
         sb.append("[");
-        ListNode current = this;
+        ListNode<V> current = this;
         while(current != null){
-            sb.append(current.data+"-> ");
+            sb.append(current.data).append("-> ");
             current = current.next;
         }
         sb.append("null ]");

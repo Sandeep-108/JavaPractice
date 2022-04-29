@@ -11,7 +11,9 @@ public class StreamMedian {
 
     public static List<Double> getMedians(List<Integer> data){
         List<Double> medianList = new ArrayList<>();
+        //minimum of bigger element
         PriorityQueue<Integer> minHeap = new PriorityQueue();
+        //maximum of lower element
         PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
         for(int i=0; i<data.size();i++){
             minHeap.add(data.get(i));
@@ -34,5 +36,6 @@ public class StreamMedian {
         if(maxHeap.size()>minHeap.size()){
             minHeap.add(maxHeap.poll());
         }
+        System.out.println(maxHeap+ ","+ minHeap);
     }
 }
